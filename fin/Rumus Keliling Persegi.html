@@ -1,0 +1,19 @@
+<html lang="en">
+<body>
+	<h1>Menghitung Keliling Persegi</h1>
+	<p>Masukkan Sisi</p>
+	<input type="number" id="sisi">
+	<button onclick="hitung()">Hitung</button>
+	<button onclick="location.reload()">Refresh</button>
+	<p id="hasil"></p>
+	<hr>
+	<a href="Home.html">Kembali</a>
+</body>
+<script>
+	function hitung(){
+		const sisi = document.getElementById('sisi').value
+		hasil = (sisi * 4)
+		const tampilkanhasil = document.getElementById('hasil').innerHTML = hasil
+	}
+</script>
+</html>
